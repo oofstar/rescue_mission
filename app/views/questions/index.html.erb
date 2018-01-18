@@ -1,0 +1,9 @@
+<h1>Rescue Mission</h1>
+
+<p>Welcome! Here are some questions that may or may not need to be answered!</p>
+
+<ul>
+  <% @questions.each do |question|%>
+    <li><b><%= link_to question.question_text, question_path(question) %></b></li>
+  <% end %>
+</ul>
